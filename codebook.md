@@ -68,13 +68,13 @@ For each of the 66 variables the mean values were tabulated and recorded in the 
 
 ### Complete list of 66 variables retained in the tidy data set.
 
-"tBodyAccMeanX"
+"tBodyAccMeanX"       
 "tBodyAccMeanY"           
-"tBodyAccMeanZ"
+"tBodyAccMeanZ"       
 "tBodyAccStdX"            
-"tBodyAccStdY"
+"tBodyAccStdY"        
 "tBodyAccStdZ"            
-"tGravityAccMeanX"
+"tGravityAccMeanX"        
 "tGravityAccMeanY"        
 "tGravityAccMeanZ"
 "tGravityAccStdX"         
@@ -132,5 +132,5 @@ For each of the 66 variables the mean values were tabulated and recorded in the 
 "fBodyBodyAccJerkMagStd"  
 "fBodyBodyGyroMagMean"     
 "fBodyBodyGyroMagStd"     
-"fBodyBodyGyroJerkMagMean" 
+"fBodyBodyGyroJerkMagMean"  
 "fBodyBodyGyroJerkMagStd" 
