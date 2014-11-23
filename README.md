@@ -86,10 +86,11 @@ names(reducedDS)[3:68] <- cnames
 ###  Part 5. Generate the tidy data file.
 
 Loop through each of 66 variables and get the average value for each subject/activity combination.
-tapply separates the column into groups with common subject and activity and applies mean() to those values. 
-melt creates a dataframe from the generated matrix
-cbind combines the data into the tidy data frame
-write.table outputs the tidy data frame to a txt file
+- tapply separates the column into groups with common subject and activity and applies mean() to those values. 
+- melt creates a dataframe from the generated matrix
+- cbind combines the data into the tidy data frame
+- write.table outputs the tidy data frame to a txt file
+
 ```{r}
 tidy <- melt(with(reducedDS, tapply(reducedDS[,3], list(subject, activity), mean)))[,1:2]
 for (i in 3:68) {
