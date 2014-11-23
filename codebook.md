@@ -88,7 +88,7 @@ For each of the 66 variables the mean values were tabulated and recorded in the 
 "tBodyAccJerkStdZ"        
 "tBodyGyroMeanX"           
 "tBodyGyroMeanY"          
-"tBodyGyroMeanZ"
+"tBodyGyroMeanZ"           
 "tBodyGyroStdX"           
 "tBodyGyroStdY"
 "tBodyGyroStdZ"           
