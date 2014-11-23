@@ -16,7 +16,10 @@ Notes:
 ======
 - There is a row for each pair of subject and activity, resulting in 180 rows
 - For each column the mean value corresponding to the subject/activity is recorded
-
+- the data can be loaded into the tidy data frame in r via
+```{r}
+tidy <- read.table("tidy.txt", header=TRUE)
+```
 
 ##Method:
 ### Part 1. Merging the training and test sets.
@@ -46,7 +49,7 @@ names(dataset) <- c("subject", "activity", t(features[2]));
 
 ```
 
-### Part 2. 
+### Part 2. Remove unwanted data
 
 The feature names were filtered so that only those that contained "mean()" or "std()" were retained. 
 ```{r}
@@ -59,6 +62,7 @@ for (i in 3:ncol(dataset)) {
 ```
 
 ### Part 3. Apply descriptive activity names to the activities.
+
 The activity labels were imported from the "activity_label.txt" file and applied to the activity column values using the factor function.
 
 ```{r}
