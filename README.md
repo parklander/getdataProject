@@ -24,8 +24,15 @@ Notes:
 Training and Test data sets were created by reading the respective x, y and subject files into r and combining them using the cbind functions.
 
 ``` {r}
+xtest <- read.table("test/X_test.txt");
+ytest <- read.table("test/y_test.txt");
+stest <- read.table("test/subject_test.txt");
+testdata <- cbind(stest, ytest, xtest);
 
-
+xtrain <- read.table("train/X_train.txt");
+ytrain <- read.table("train/y_train.txt");
+strain <- read.table("train/subject_train.txt");
+traindata <- cbind(strain, ytrain, xtrain);
 ```
 
 The training and test data sets were merged using the rbind function
